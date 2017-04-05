@@ -10,19 +10,16 @@ function capfirst($word) {
   return $word;
 }
 
-function makeCoffee($type) {
+function makeDessert($type) {
   if ($type == 'napoleon') {
     $valid = true;
     $description = 'A Napoleon is a wondrous combination of puff pratry, custard and whipped cream that is the perfect mix of crunchy and creamy.';
   } else if ($type == 'tirimisu') {
     $valid = true;
     $description = 'Tirimisu is a delight for those who love coffee and cake. It has layers of lady fingers coated in a whipped mascarpone custard and topped with cocoa powder. Mmmhh mmhhh good.';
-  } else if ($type == 'ice cream') {
+  } else if ($type == 'icecream') {
     $valid = true;
-    $description = 'The most basic of desserts, ice cream is a necessity for anyone with a sweet tooth, especially if it&rsquo;s a hot day. Iit&rsquo;s frozen and delicious. ';
-  } else if ($type == 'espresso') {
-    $valid = true;
-    $description = 'Highly concentrated Italian coffee served in a single standard shot.';
+    $description = 'The most basic of desserts, icecream is a necessity for anyone with a sweet tooth, especially if it&rsquo;s a hot day. Iit&rsquo;s frozen and delicious. ';
   } else {
     $valid = false;
   };
@@ -43,7 +40,7 @@ function makeCoffee($type) {
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <p class="m-0"><strong>'.capfirst($type).'? Gross!</strong> Enter something good next time.</p>
+        <p class="m-0"><strong>'.capfirst($type).'? Sorry!</strong> Never heard of that dessert!</p>
       </div>
     ');
   }
